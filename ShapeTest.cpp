@@ -19,7 +19,7 @@ TEST(drawUnique, Shape)
 	shapes.push_back(std::make_unique<Rectangle>(Point(11.1, 22.2), Point(33.3, 44.4), canvas));
 	shapes.push_back(std::make_unique<Circle>(Point(111.1, 222.2), 333.3, canvas));
 
-	for (auto& shape: shapes)
+	for (const auto& shape: shapes)
 	{
 		shape->draw();
 	}
