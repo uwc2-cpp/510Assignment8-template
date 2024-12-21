@@ -5,10 +5,10 @@
 class Shape
 {
 public:
-	Shape() = default;
+    Shape() = default;
 
-	Shape(const Shape& src) = delete;
-	Shape& operator=(const Shape& rhs) = delete;
+    Shape(const Shape& src) = delete;
+    Shape& operator=(const Shape& rhs) = delete;
 
     virtual ~Shape() = default;
 
@@ -20,15 +20,15 @@ public:
     // we will implement draw by streaming the coordinates to an ostream. The ostream is passed as a parameter
     // to the derived class constructors
 
-	virtual void draw() const = 0;
+    virtual void draw() const = 0;
 
-	virtual void stream(std::ostream& os) const = 0;
+    virtual void stream(std::ostream& os) const = 0;
 };
 
 // Use the virtual stream operator of the shape. This way a single override of operator<<() for shape
 // correctly streams all subclasses
 inline std::ostream& operator<<(std::ostream& os, const Shape& shape)
 {
-	shape.stream(os);
-	return os;
+    shape.stream(os);
+    return os;
 }
