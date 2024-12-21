@@ -1,4 +1,3 @@
 #include "TestHarness.h"
-#include "Point.h"
-#include <sstream>
 
+#include "Point.h"
