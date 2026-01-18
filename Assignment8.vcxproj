@@ -154,7 +154,6 @@
     <ClInclude Include="Point.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Shape.h" />
-    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
@@ -170,8 +169,6 @@
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectangleTest.cpp" />
     <ClCompile Include="ShapeTest.cpp" />
-    <ClCompile Include="Triangle.cpp" />
-    <ClCompile Include="TriangleTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

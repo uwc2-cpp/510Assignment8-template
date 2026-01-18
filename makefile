@@ -6,7 +6,7 @@ CXXFLAGS += -std=c++20 -Wall -Werror
 # -Werror: warnings reported as errors
 
 OBJ = CppUnitLite/Failure.o CppUnitLite/Test.o CppUnitLite/TestRegistry.o CppUnitLite/TestResult.o CppUnitLite/WFailure.o \
-      Circle.o CircleTest.o Point.o PointTest.o Rectangle.o RectangleTest.o ShapeTest.o Triangle.o TriangleTest.o \
+      Circle.o CircleTest.o Point.o PointTest.o Rectangle.o RectangleTest.o ShapeTest.o \
       Main.o 
       
 %.o: %.cpp
