@@ -29,7 +29,7 @@ endef
 all: directories ProjectCode CppUnitLite UnitTest
 
 UnitTest: $(OBJ) directories ProjectCode CppUnitLite
-	$(CXX) -L../ProjectCode -L../CppUnitLite $(OBJ) -o ../bin/UnitTest -lProjectCode -lCppUnitLite $(OPTFLAGS)
+	$(CXX) -L../bin -L../CppUnitLite $(OBJ) -o ../bin/UnitTest -lProjectCode -lCppUnitLite $(OPTFLAGS)
 
 ProjectCode:
 	$(MAKE) -j -C ../ProjectCode all
