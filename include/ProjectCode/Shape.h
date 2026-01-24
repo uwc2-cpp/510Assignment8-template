@@ -6,19 +6,12 @@ class Shape
 {
 public:
     Shape() = default;
-
-    Shape(const Shape& src) = delete;
-    Shape& operator=(const Shape& rhs) = delete;
+    Shape(const Shape& src) = default;
+    Shape(Shape&& src) = default;
+    Shape& operator=(const Shape& rhs) = default;
+    Shape& operator=(Shape&& rhs) = default;
 
     virtual ~Shape() = default;
-
-    // In a real graphics application, draw would be prototyped as:
-    // virtual void draw() const = 0;
-    // and would draw the shape on the computer screen.
-    //
-    // C++ does not have a standard graphics library. Thus for class
-    // we will implement draw by streaming the coordinates to an ostream. The ostream is passed as a parameter
-    // to the derived class constructors
 
     virtual void draw() const = 0;
 

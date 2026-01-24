@@ -11,5 +11,5 @@ public:
 	// not existing, which thwarts building this starter code out of the box.
 	//
 	// Remove this API and comment once you've implemented real content for this class.
-   PROJECTCODE_API void PlaceholderApiFunction();
+    PROJECTCODE_API void PlaceholderApiFunction();
 };
