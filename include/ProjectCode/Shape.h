@@ -5,16 +5,7 @@
 class Shape
 {
 public:
-    Shape() = default;
-    Shape(const Shape& src) = default;
-    Shape(Shape&& src) = default;
-    Shape& operator=(const Shape& rhs) = default;
-    Shape& operator=(Shape&& rhs) = default;
-
-    virtual ~Shape() = default;
-
     virtual void draw() const = 0;
-
     virtual void stream(std::ostream& os) const = 0;
 };
 
